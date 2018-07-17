@@ -25,7 +25,7 @@ class CitationMla extends React.Component {
   }
 
   mappings() {
-    let map =  
+    let map =
           [
             {creator: {prefix: '', suffix: '.' }},
             {title: {prefix: ' ', suffix: '.', formatters: [this.italicize] }},

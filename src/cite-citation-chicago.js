@@ -8,14 +8,14 @@ class CitationChicago extends React.Component {
 
   mappings() {
     let map =
-          [
-            {creator: {prefix: '', suffix: '.' }},
-            {creation_date: {prefix: ' ', suffix: '. ' }},
-            {title: {prefix: '"', suffix: '." '}},
-            {contributing_organization: {prefix: ' ', suffix: ', ' }},
-            {current_date: {prefix: 'Accessed ', suffix: '. ', formatters: [this.format_date]}},
-            {url: {prefix: '', suffix: '' }}
-          ]
+      [
+        {creator: {prefix: '', suffix: '.' }},
+        {creation_date: {prefix: ' ', suffix: '. ' }},
+        {title: {prefix: '"', suffix: '." '}},
+        {contributing_organization: {prefix: ' ', suffix: ', ' }},
+        {current_date: {prefix: 'Accessed ', suffix: '. ', formatters: [this.format_date]}},
+        {url: {prefix: '', suffix: '' }}
+      ]
     return map
   }
 
