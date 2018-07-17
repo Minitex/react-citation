@@ -18,13 +18,18 @@ Then open [`localhost:8000`](http://localhost:8000) in a browser.
 
 ## Installation
 
-The easiest way to use react-citation is to install it from NPM and include it in your own React build process (using [Browserify](http://browserify.org), [Webpack](http://webpack.github.io/), etc).
-
-You can also use the standalone build by including `dist/react-citation.js` in your page. If you use this, make sure you have already included React, and it is available as a global variable.
+Include react-citation as part of your package.json dependency list:
 
 ```
-npm install git:+git@github.com:UMNLibraries/react-citation.git --save
+...
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-citation": "git+https://github.com/UMNLibraries/react-citation.git#51682c87e55bd",
+    "react-dom": "^15.4.1"
+  },
+...
 ```
+See the [react-citation-demo](https://github.com/UMNLibraries/react-citation-demo) for an example of how to do this.
 
 ## Development (`src`, `lib` and the build process)
 
